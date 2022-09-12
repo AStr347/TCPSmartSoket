@@ -57,7 +57,7 @@ impl TCPClient for CLIClient {
                 return;
             }
             let com = comres.unwrap();
-            if (3 < com) {
+            if 3 < com {
                 stream
                     .shutdown(Shutdown::Both)
                     .expect("can't shutdown client stream");

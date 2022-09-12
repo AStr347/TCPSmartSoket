@@ -6,4 +6,4 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-TCPServer = { path = "../TCPServer" }
+tokio = { version = "1.21.0", features = ["net", "io-util", "rt-multi-thread", "time"] }
